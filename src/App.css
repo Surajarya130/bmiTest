@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  color:#027fc7;;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainContainer{
+  max-width: 1470px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#alertPopup{
+  height: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inputBox{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 200px;
+  margin: 80px auto 10px;
+}
+.inputBox *{
+  width: 200px;
+  height: 30px;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.bmiBox{
+  max-width: 480px;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bmiMarkPin{
+  position: relative;
+  height: 23px;
+}
+
+.bmiMarkPin .arrowMark{
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid #555;  
+  position: relative;
+  left: -15px;
+}
+
+.bmiRange{
+  width: 480px;
+  border-radius: 20px;
+  height: 20px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bmiRange div{
+  background-color: #555;
+}
+.bmiBox #sect1{
+  border-right: 3px solid #fff;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  width: 25%;
+  /* background-color: red; */
+}
+
+#sect2{
+  border-right: 3px solid #fff;
+  width:50%;
+  /* background-color: green; */
+}
+#sect3{
+  width: 25%;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  /* background-color: blue; */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.customMtr{
+  height: 23px;
+}
+
+.bmiRange div span{
+  position: relative;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.colorsBlock{
+  height: 30px;
+  width: 100%;
+  max-width: 600px;
+  margin: 20% auto;
+}
+
+.colorsBlock div{
+  width: 15px;
+  height: 15px;
+  margin:0 30px 15px 0;
+}
+.colorsBlock .red{
+  background-color: red;
+}
+.colorsBlock .green{
+  background-color: green;
+}
+.colorsBlock .pinkish{
+  background-color: rgb(178, 118, 243);
+}
+
+.colorStd div p{
+  margin-left: 20px;
+  position: relative;
+  top: -5px;
 }
